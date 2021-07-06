@@ -1,4 +1,4 @@
-This is the official code for "Generating 3D TOF-MRA Volumes and Segmentation Labels using Generative Adversarial Networks with Mixed Precision" - Subramaniam et al. 2021 - under review
+## **This is the official code for "Generating 3D TOF-MRA Volumes and Segmentation Labels using Generative Adversarial Networks with Mixed Precision" - Subramaniam et al. 2021 - under review**
 
 **Aim:** Generating reasonable looking 3D TOF-MRA patch-label pairs. Utilizing mixed precision for improving the quality and performance of the patch-label pairs
 
@@ -52,11 +52,10 @@ Critic - Critic's score used to train the generator and critic
 
 **Results:**
 
-Sample images of mid-axial slice of patch-label pairs, and the corresponding 3D vessel structure from the 4 different GAN variants and the real data:
-
+Sample images of mid-axial slice of patch-label pairs, and the corresponding 3D vessel structure from A: GP model; B: SN model; C: SN-MP model; D: c-SN-MP model; E: Real
 ![sample_data_vessel_structure](Images_for_documentation/Figure_4.png)
 
-Samples of 3D volumes as GIFs:
+Samples of 3D volumes in axial view as GIFs:
 
 GP:
 

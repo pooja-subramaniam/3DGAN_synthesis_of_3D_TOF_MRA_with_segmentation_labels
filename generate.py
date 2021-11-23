@@ -5,6 +5,7 @@ import torch
 import torch.nn as nn
 import torch.utils.data as data_utils
 import torch.backends.cudnn as cudnn
+from opacus.utils.module_modification import convert_batchnorm_modules
 
 import config as c
 import model
@@ -25,6 +26,7 @@ plt.switch_backend('agg')
 
 # to ensure it doesn't run partly on another gpu
 torch.cuda.set_device(c.cuda_n[0])
+torch.set_default_tensor_type("torch.cuda.FloatTensor")
 
 # Device selection
 device = torch.device("cuda:" + str(c.cuda_n[0]) if (torch.cuda.is_available()
@@ -33,6 +35,11 @@ device = torch.device("cuda:" + str(c.cuda_n[0]) if (torch.cuda.is_available()
 
 # ####Create generator object##### #
 netG = model.Generator().to(device)
+
+# DPGAN specific
+if c.diff_priv:
+    netG = convert_batchnorm_modules(netG)
+
 
 # Print the model
 print(netG)

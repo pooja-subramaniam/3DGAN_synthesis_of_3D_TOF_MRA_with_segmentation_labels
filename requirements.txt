@@ -6,3 +6,5 @@ torch==1.7.0
 nibabel==3.2.0
 asposestorage==1.0.2
 scikit_learn==0.24.2
+opacus==0.14.0
+torchcsprng=0.1.3

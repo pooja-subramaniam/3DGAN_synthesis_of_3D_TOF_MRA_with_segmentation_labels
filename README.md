@@ -17,7 +17,8 @@
     * SN model
     * SN-MP model
     * c-SN-MP model
-    Also contains config parameters to continue training and generate images from saved models
+    * DPGAN
+    Also contains config parameters to continue training and generate images from saved models; the config parameter changes required to run DPGAN are specified as comments in the file
 
 * **dataset.py:** contains custom pytorch dataset class GANDataset as the each patch/label needs to be read from independent zipped files
 
@@ -28,6 +29,8 @@
 * **generate.py:** generate patches using the saved models; config file can be used to change model and epoch numbers
 
 * **evaluate.py:** evaluation with FID and PRD
+
+* **DPGAN_train.py:** training code for DPGAN preliminary results in supplementary material
 
 
 **Input:**

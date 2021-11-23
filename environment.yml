@@ -8,8 +8,8 @@ dependencies:
   - _libgcc_mutex=0.1=main
   - blas=1.0=mkl
   - c-ares=1.16.1=h516909a_3
-  - ca-certificates=2020.10.14=0
-  - certifi=2020.6.20=py38_0
+  - ca-certificates=2021.7.5=h06a4308_1
+  - certifi=2021.5.30=py38h06a4308_0
   - cudatoolkit=10.1.243=h6bb024c_0
   - cycler=0.10.0=py38_0
   - dbus=1.13.18=hb2f20db_0
@@ -87,6 +87,7 @@ dependencies:
   - threadpoolctl=2.1.0=pyh5ca1d4c_0
   - tk=8.6.10=hbc83047_0
   - torchaudio=0.7.0=py38
+  - torchcsprng=0.1.3=py38_cu101
   - torchvision=0.8.1=py38_cu101
   - tornado=6.0.4=py38h7b6447c_1
   - tqdm=4.51.0=pyh9f0ad1d_0
@@ -98,11 +99,13 @@ dependencies:
   - zstd=1.4.5=h9ceee32_0
   - pip:
     - chardet==4.0.0
+    - dataclasses==0.6
     - docopt==0.6.2
+    - future==0.18.2
     - idna==2.10
+    - opacus==0.14.0
     - pipreqs==0.4.10
     - requests==2.25.1
     - urllib3==1.26.6
     - yarg==0.1.9
 prefix: /home/pooja/anaconda3/envs/3DGAN
-
